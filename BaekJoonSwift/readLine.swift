@@ -136,3 +136,13 @@ import Foundation
 //print("      |")
 //print("      |")
 
+
+//11382 꼬마정민
+
+//let line = readLine()!
+//let lineArr = line.components(separatedBy: " ")
+//var sum = 0
+//for i in 1...3{
+//    sum = sum + Int(lineArr[i-1])!
+//}
+//print(sum)
