@@ -89,3 +89,20 @@ import Foundation
 //}
 
 
+
+// 10813 공 바꾸기
+let lineArr = readLine()!.split(separator: " ").map {Int($0)!}
+var basket : [Int] = []
+for i in 1...lineArr[0]{
+    basket.append(i)
+}
+for _ in 1...lineArr[1]{
+    let change = readLine()!.split(separator: " ").map {Int($0)!}
+    let a = basket[change[0]-1]
+    basket[change[0]-1] = basket[change[1]-1]
+    basket[change[1]-1] = a
+    print(basket)
+}
+for i in 0...lineArr[0]-1{
+    print(basket[i])
+}
