@@ -91,18 +91,50 @@ import Foundation
 
 
 // 10813 공 바꾸기
-let lineArr = readLine()!.split(separator: " ").map {Int($0)!}
-var basket : [Int] = []
-for i in 1...lineArr[0]{
-    basket.append(i)
-}
-for _ in 1...lineArr[1]{
-    let change = readLine()!.split(separator: " ").map {Int($0)!}
-    let a = basket[change[0]-1]
-    basket[change[0]-1] = basket[change[1]-1]
-    basket[change[1]-1] = a
-    print(basket)
-}
-for i in 0...lineArr[0]-1{
-    print(basket[i])
-}
+//let lineArr = readLine()!.split(separator: " ").map {Int($0)!}
+//var basket : [Int] = []
+//for i in 1...lineArr[0]{
+//    basket.append(i)
+//}
+//for _ in 1...lineArr[1]{
+//    let change = readLine()!.split(separator: " ").map {Int($0)!}
+//    let a = basket[change[0]-1]
+//    basket[change[0]-1] = basket[change[1]-1]
+//    basket[change[1]-1] = a
+//    print(basket)
+//}
+//for i in 0...lineArr[0]-1{
+//    print(basket[i])
+//}
+
+
+
+// 5597 과제 안 내신 분?
+
+//var arr : [Int] = []
+//
+//for i in 1...30{
+//    arr.append(i)
+//}
+//
+//for _ in 1...28{
+//    let read = Int(readLine()!)!
+//    arr.remove(at: arr.firstIndex(of: read)!)
+//}
+//print(arr.min()!)
+//print(arr.max()!)
+
+
+
+//3052 나머지
+
+//var arr : [Int] = []
+//var differentArr : [Int] = []
+//var count = 0
+//for _ in 0...9{
+//    let read = Int(readLine()!)! % 42
+//    arr.append(read)
+//}
+//let arrSet = Set(arr)
+//
+//print(Array(arrSet).count)
