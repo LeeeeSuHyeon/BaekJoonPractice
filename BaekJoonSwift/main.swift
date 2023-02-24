@@ -138,3 +138,45 @@ import Foundation
 //let arrSet = Set(arr)
 //
 //print(Array(arrSet).count)
+
+
+
+//10811 바구니 뒤집기
+
+//let lineArr = readLine()!.split(separator: " ").map {Int($0)!}
+//var arr : [Int] = []
+//
+//for i in 1...lineArr[0]{
+//    arr.append(i)
+//}
+//
+//for _ in 1...lineArr[1]{
+//    let range = readLine()!.split(separator: " ").map {Int($0)!}
+//    var start = range[0]-1
+//    var last = range[1]-1
+//    while start < last{
+//        arr.swapAt(start, last)
+//        start += 1
+//        last -= 1
+//    }
+//}
+//arr.forEach{print($0, terminator: " ")}
+
+
+//1546 평균
+
+//let count = Int(readLine()!)!
+//var score = readLine()!.split(separator: " ").map {Double($0)!}
+//var maxScore = 0.0
+//var sum = 0.0
+//
+//print(score)
+//maxScore = score.max() ?? 0.0
+//print("maxScore: ", maxScore)
+//for i in 1...count{
+//        score[i-1] = score[i-1] / maxScore * 100
+//        sum += score[i-1]
+//        print("scoreArr: ", score[i-1])
+//}
+//print(sum / Double(score.count))
+
